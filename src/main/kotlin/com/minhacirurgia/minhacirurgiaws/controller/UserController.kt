@@ -1,8 +1,8 @@
-package com.apiquerosabermais.apiquerosabermais.controller
+package com.minhacirurgia.minhacirurgiaws.controller
 
-import com.apiquerosabermais.apiquerosabermais.controller.request.PostUserRequest
-import com.apiquerosabermais.apiquerosabermais.model.UserModel
-import com.apiquerosabermais.apiquerosabermais.service.UserService
+import com.minhacirurgia.minhacirurgiaws.controller.request.PostUserRequest
+import com.minhacirurgia.minhacirurgiaws.model.UserModel
+import com.minhacirurgia.minhacirurgiaws.service.UserService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
@@ -21,7 +21,6 @@ class UserController (
     fun create(@RequestBody @Valid user: PostUserRequest){
         userService.create(user.toUserModel())
     }
-
 
 
     @PostMapping("/login")

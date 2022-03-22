@@ -1,4 +1,4 @@
-package com.apiquerosabermais.apiquerosabermais
+package com.minhacirurgia.minhacirurgiaws
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

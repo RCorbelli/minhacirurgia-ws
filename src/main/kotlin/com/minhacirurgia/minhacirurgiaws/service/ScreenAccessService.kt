@@ -1,7 +1,7 @@
-package com.apiquerosabermais.apiquerosabermais.service
+package com.minhacirurgia.minhacirurgiaws.service
 
-import com.apiquerosabermais.apiquerosabermais.model.ScreenAccessModel
-import com.apiquerosabermais.apiquerosabermais.repository.ScreenAccessRepository
+import com.minhacirurgia.minhacirurgiaws.model.ScreenAccessModel
+import com.minhacirurgia.minhacirurgiaws.repository.ScreenAccessRepository
 import org.springframework.stereotype.Service
 
 @Service

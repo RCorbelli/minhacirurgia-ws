@@ -1,6 +1,6 @@
-package com.apiquerosabermais.apiquerosabermais.repository
+package com.minhacirurgia.minhacirurgiaws.repository
 
-import com.apiquerosabermais.apiquerosabermais.model.ScreenAccessModel
+import com.minhacirurgia.minhacirurgiaws.model.ScreenAccessModel
 import org.springframework.data.repository.CrudRepository
 
 interface ScreenAccessRepository: CrudRepository<ScreenAccessModel, Int> {

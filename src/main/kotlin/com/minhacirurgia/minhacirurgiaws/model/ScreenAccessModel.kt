@@ -1,4 +1,4 @@
-package com.apiquerosabermais.apiquerosabermais.model
+package com.minhacirurgia.minhacirurgiaws.model
 
 import java.time.LocalDateTime
 import java.util.*

@@ -1,4 +1,4 @@
-package com.apiquerosabermais.apiquerosabermais.config
+package com.minhacirurgia.minhacirurgiaws.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

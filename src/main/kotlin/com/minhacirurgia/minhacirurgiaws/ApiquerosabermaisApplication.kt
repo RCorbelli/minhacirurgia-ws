@@ -1,4 +1,4 @@
-package com.apiquerosabermais.apiquerosabermais
+package com.minhacirurgia.minhacirurgiaws
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,9 +1,9 @@
-package com.apiquerosabermais.apiquerosabermais.controller
+package com.minhacirurgia.minhacirurgiaws.controller
 
-import com.apiquerosabermais.apiquerosabermais.controller.request.PostUserRequest
-import com.apiquerosabermais.apiquerosabermais.model.ScreenAccessModel
-import com.apiquerosabermais.apiquerosabermais.service.ScreenAccessService
-import com.apiquerosabermais.apiquerosabermais.service.UserService
+import com.minhacirurgia.minhacirurgiaws.controller.request.PostUserRequest
+import com.minhacirurgia.minhacirurgiaws.model.ScreenAccessModel
+import com.minhacirurgia.minhacirurgiaws.service.ScreenAccessService
+import com.minhacirurgia.minhacirurgiaws.service.UserService
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
