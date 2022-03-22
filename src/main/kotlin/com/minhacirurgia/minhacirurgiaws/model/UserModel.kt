@@ -1,5 +1,8 @@
-package com.apiquerosabermais.apiquerosabermais.model
+package com.minhacirurgia.minhacirurgiaws.model
 
+import com.minhacirurgia.minhacirurgiaws.model.enum.SurgeryType
+import java.time.LocalDate
+import java.time.LocalDateTime
 import java.util.*
 import javax.persistence.*
 
@@ -15,13 +18,16 @@ data class UserModel(
     @Column
     var name: String,
     @Column
-    var surgery: String,
+    var email: String,
     @Column
-    var birthdate: Date,
+    @Enumerated(EnumType.STRING)
+    var surgery: SurgeryType,
     @Column
-    var location: String,
+    var birthdate: String,
     @Column
     var password: String,
+    @Column
+    var date_register: LocalDateTime = LocalDateTime.now()
 ) {
     class UserLogin(val userName: String, val password: String){}
 }
