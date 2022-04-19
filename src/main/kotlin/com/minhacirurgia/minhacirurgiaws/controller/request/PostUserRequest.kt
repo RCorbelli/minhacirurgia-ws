@@ -2,17 +2,17 @@ package com.minhacirurgia.minhacirurgiaws.controller.request
 
 import com.minhacirurgia.minhacirurgiaws.model.UserModel
 import com.minhacirurgia.minhacirurgiaws.model.enum.SurgeryType
+import com.minhacirurgia.minhacirurgiaws.validation.EmailAvailable
 import java.time.LocalDate
 import java.util.*
 import javax.validation.constraints.NotEmpty
 
 data class PostUserRequest (
-    @field:NotEmpty(message = "userName deve ser informado.")
-    var userName: String,
     @field:NotEmpty(message = "Nome deve ser informado.")
     var name: String,
     var surgery: SurgeryType,
     @field:NotEmpty(message = "Email deve ser informado.")
+    @EmailAvailable
     var email: String,
     var birthdate: String,
     @field:NotEmpty(message = "Senha deve ser informada")
@@ -20,7 +20,6 @@ data class PostUserRequest (
 ){
     fun toUserModel(): UserModel {
         return UserModel(
-            userName = this.userName,
             name = this.name,
             email = this.email,
             surgery = this.surgery,

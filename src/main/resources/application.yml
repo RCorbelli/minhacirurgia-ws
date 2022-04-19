@@ -1,8 +1,10 @@
+server:
+  port: 8080
 spring:
   jpa:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/querosabermais?createDatabaseIfNotExist=true
-    username: root
-    password: root
+    url: jdbc:mysql://minhacirurgia.cgaiohdevfm5.us-east-1.rds.amazonaws.com:3306/minhacirurgia?createDatabaseIfNotExist=true
+    username: admin
+    password: admin123

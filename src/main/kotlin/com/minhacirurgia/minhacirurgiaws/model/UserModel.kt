@@ -5,6 +5,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.util.*
 import javax.persistence.*
+import javax.validation.constraints.NotEmpty
 
 
 @Entity(name = "user")
@@ -12,9 +13,6 @@ data class UserModel(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int? = null,
-
-    @Column(name = "user_name")
-    var userName: String,
     @Column
     var name: String,
     @Column
@@ -29,5 +27,9 @@ data class UserModel(
     @Column
     var date_register: LocalDateTime = LocalDateTime.now()
 ) {
-    class UserLogin(val userName: String, val password: String){}
+    data class UserLogin(
+        @field:NotEmpty(message = "Email deve ser informado.")
+        val email: String,
+        @field:NotEmpty(message = "A senha deve ser informada")
+        val password: String){}
 }

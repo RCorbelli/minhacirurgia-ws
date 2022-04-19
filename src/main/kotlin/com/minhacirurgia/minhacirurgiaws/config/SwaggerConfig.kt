@@ -18,14 +18,14 @@ class SwaggerConfig {
     @Bean
     fun api(): Docket = Docket(DocumentationType.SWAGGER_2)
         .select()
-        .apis(RequestHandlerSelectors.basePackage("com.apiquerosabermais.apiquerosabermais.controller"))
+        .apis(RequestHandlerSelectors.basePackage("com.minhacirurgia.minhacirurgiaws.controller"))
         .paths(PathSelectors.any())
         .build()
 
         .apiInfo(
             ApiInfoBuilder()
                 .title("Quero Saber Mais")
-                .description("Api do Projeto de TCC Quero Saber Mais")
+                .description("Api do Projeto de TCC Minha Cirurgia")
                 .build())
 
 }
